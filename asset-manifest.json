@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ShopTendance.git/static/css/main.5a0376cb.css",
+    "main.js": "/ShopTendance.git/static/js/main.6c69e1fb.js",
+    "index.html": "/ShopTendance.git/index.html",
+    "main.5a0376cb.css.map": "/ShopTendance.git/static/css/main.5a0376cb.css.map",
+    "main.6c69e1fb.js.map": "/ShopTendance.git/static/js/main.6c69e1fb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a0376cb.css",
+    "static/js/main.6c69e1fb.js"
+  ]
+}
