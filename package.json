@@ -2,6 +2,7 @@
   "name": "redux",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ACH90.github.io/ShopTendance.git",
   "dependencies": {
     "@redux-devtools/extension": "^3.2.5",
     "@reduxjs/toolkit": "^1.9.7",
@@ -22,7 +23,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server --w db.json"
+    "server": "json-server --w db.json",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
