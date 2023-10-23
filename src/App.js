@@ -6,6 +6,19 @@ import Post from "./components/Post"
 import { isEmpty } from "./components/Utils";
 import "./styles/index.scss";
 
+const PostList = () => {
+  const posts = useSelector((state) => state.postReducer);
+
+  return (
+    <div className="post-container">
+      {!isEmpty(posts) &&
+        posts.map((post, index) => (
+          <Post post={post} key={index} />
+        ))}
+    </div>
+  );
+};
+
 const App = () => {
 
   const posts = useSelector((state)=> state.postReducer);

@@ -10,6 +10,9 @@ import rootReducer from "./reducers";
 import { getPosts } from "./actions/post.action";
 import { getUser } from "./actions/user.action";
 
+//ROUTER
+import { BrowserRouter } from "react-router-dom";
+
 const store = configureStore({
     reducer: rootReducer,
     devTools : true,
@@ -20,8 +23,10 @@ store.dispatch(getUser())
 
 ReactDOM.render(
 
-    <Provider store = {store}>
-        <App /> 
-    </Provider>,
+    <BrowserRouter>
+        <Provider store = {store}>
+            <App /> 
+        </Provider>
+    </BrowserRouter>,
 
 document.getElementById("root"));
