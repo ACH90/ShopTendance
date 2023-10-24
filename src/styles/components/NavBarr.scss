@@ -1,0 +1,18 @@
+.NavBar {
+    background-color: #333; /* Couleur de fond */
+    display: flex; /* Afficher les éléments de la nav horizontalement */
+    justify-content: space-between; /* Espacement égal entre les éléments */
+    padding: 10px; /* Espacement intérieur */
+  }
+  
+  .NavBar a {
+    color: #fff; /* Couleur du texte des liens */
+    text-decoration: none; /* Supprimer la soulignement des liens */
+    margin: 0 10px; /* Espacement horizontal entre les liens */
+  }
+  
+  /* Style pour les liens lorsque l'utilisateur survole */
+  .NavBar a:hover {
+    text-decoration: underline; /* Soulignement du lien au survol */
+  }
+  

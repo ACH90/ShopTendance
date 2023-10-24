@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { isEmpty } from "./Utils";
+// import { isEmpty } from "./Utils";
 import { deletePost, editPosts } from "../actions/post.action";
 
 const Post = ({ post }) => {

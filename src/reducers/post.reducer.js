@@ -1,6 +1,6 @@
 import { ADD_POST, ADD_POST_LIKE, DELETE_POST, EDIT_POST, GET_POSTS } from "../actions/post.action";
 
-const initialState = {};
+const initialState = [];
 
 export default function postReducer(state = initialState, action) {
    switch (action.type){
