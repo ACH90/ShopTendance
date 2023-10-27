@@ -2,7 +2,7 @@
   "name": "redux",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ACH90.github.io/ShopTendance.git",
+  "homepage": "",
   "dependencies": {
     "@redux-devtools/extension": "^3.2.5",
     "@reduxjs/toolkit": "^1.9.7",

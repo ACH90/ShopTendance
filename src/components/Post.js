@@ -32,14 +32,15 @@ const Post = ({ post }) => {
        <h2>{post.title}</h2>
        {editToggle ? (
         <form onSubmit={e => handleEdit(e)}>
-          <textarea autoFocus={true} defaultValue={post.description} onChange={e => setEditContent(e.target.value)}></textarea>
+          <input type="text" autoFocus={true} defaultValue={post.description} onChange={e => setEditContent(e.target.value)}></input>
           <input type="submit" value="Valider modification" />
         </form>
       ) : (
-        <p className="modif">{post.content}</p>
+        <p className="modif">{post.content}</p>,
+        <p>{post.description}</p>
       )} 
-           <p>{post.description}</p>
-           <p>{post.categories}</p>
+           
+           {/* <p>{post.categories}</p> */}
        <img
         src={post.imageUrl} // Affichez l'image en utilisant post.imageUrl
         className="post-img"

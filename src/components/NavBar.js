@@ -1,16 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function NavBar() {
-    return (
-        <nav className="NavBar"> 
-            {/* <Link to="/">Accueil</Link> */}
-            <Link to="/Home">Accueil</Link>
-            <Link to="/PostForm">PostForm</Link>
-            <Link to="/Hommes">Homme</Link>
-            <Link to="/Femmes">Femme</Link>
-            <Link to="/Ados">Ado</Link>
-            <Link to="/Enfants">Enfant</Link>
-            <Link to="/Bebes">Bébé</Link>
-        </nav>
-    )}
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  return (
+    <nav className="NavBar">
+      <Link to="/" className="home-link">
+        ShopTendance
+      </Link>
+      <div className="menu-icon" onClick={toggleMenu}>
+        <div className={`bar ${menuOpen ? "open" : ""}`}></div>
+        <div className={`bar ${menuOpen ? "open" : ""}`}></div>
+        <div className={`bar ${menuOpen ? "open" : ""}`}></div>
+      </div>
+      <div className={`menu ${menuOpen ? "open" : ""}`}>
+        <Link to="/PostForm">PostForm</Link>
+        <Link to="/Hommes">Homme</Link>
+        <Link to="/Femmes">Femme</Link>
+        <Link to="/Ados">Ado</Link>
+        <Link to="/Enfants">Enfant</Link>
+        <Link to="/Bebes">Bébé</Link>
+      </div>
+    </nav>
+  );
+}

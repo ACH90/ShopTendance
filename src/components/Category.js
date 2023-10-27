@@ -9,20 +9,20 @@ import { getPosts } from "../actions/post.action";
 function CategoryPost ({ category }) {
 
   const posts = useSelector((state) => state.postReducer);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        await dispatch(getPosts())
-      }
-      catch (error) {
-        console.log(error);
-      }
-    };
-    fetchData();
-  }
-  , [dispatch]);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       await dispatch(getPosts())
+  //     }
+  //     catch (error) {
+  //       console.log(error);
+  //     }
+  //   };
+  //   fetchData();
+  // }
+  // , [dispatch]);
 
 //   let categoryPost = Array.isArray(posts) ? posts : [];
 

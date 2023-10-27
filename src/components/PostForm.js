@@ -12,19 +12,21 @@ const PostForm = () => {
 
     console.log(form);
 
-    const selectedCategories = [
-      form.current[5].value, // Sexe
-      form.current[6].value, // Catégorie principale
-    ];
+    // const selectedCategories = [
+    //    // Sexe
+    //   form.current[6].value, // Catégorie principale
+    // ];
 
     const postData = {
 
+      id : form.lenght + 1,
       title: form.current[0].value,
       description: form.current[1].value,
-      imageUrl: form.current[2].value,
+      categories: form.current[5].value,
       salePrice: form.current[3].value,
       basePrice: form.current[4].value,
-      categories: selectedCategories, // Tableau de catégories
+      imageUrl: form.current[2].value,
+      // Tableau de catégories
   }
 
 
@@ -45,16 +47,18 @@ const PostForm = () => {
         <input type="number" placeholder="Prix conseillé de l'article" />
         <select name="pets" id="pet-select">
           <option value="">Sexe</option>
-          <option value="Femme">Femme</option>
-          <option value="Homme">Homme</option>
-          <option value="Unisex">Unisex</option>
+          <option value="Femmes">Femme</option>
+          <option value="Hommes">Homme</option>
+          <option value="Ados">Ados</option>
+          <option value="Enfants">Enfants</option>
+          <option value="Bebes">Bébés</option>
         </select>
-        <select name="pets" id="pet-select" placeholder="Catégories">
+        {/* <select name="pets" id="pet-select" placeholder="Catégories">
           <option value="">Catégorie</option>
           <option value="Vetements">Vetements</option>
           <option value="Chaussures">Chaussures</option>
           <option value="Accessoires">Accessoires</option>
-        </select>
+        </select> */}
         <input type="submit" value="Envoyer" />
       </form>
     </div>

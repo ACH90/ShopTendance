@@ -1,0 +1,186 @@
+body {
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+.NavBar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background: linear-gradient(to right, #8a7754, #865000);
+
+}
+
+/* Style pour le lien "Accueil" (à gauche) */
+.NavBar .home-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+/* Style pour les liens (à droite) */
+.NavBar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    margin-left: auto; /* Pousse les autres liens vers la droite */
+}
+
+/* Style pour les liens lorsque l'utilisateur survole */
+.NavBar a:hover {
+    text-decoration: underline;
+}
+
+/* Ajoute de l'espace autour des liens pour une meilleure apparence */
+.NavBar a {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Ajoute une bordure aux liens pour les distinguer du fond */
+.NavBar a {
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* Style pour les liens lorsque l'utilisateur survole */
+.NavBar a:hover {
+    background-color: #b98117fa;
+    color: #fff;
+    text-decoration: none;
+}
+
+  
+  
+  
+  
+
+
+
+  
+
+  .post-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%; /* Largeur totale du conteneur parent */
+  }
+
+  .product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Augmentation de la marge pour plus d'espace entre les cartes */
+    width: 350px;
+    height: 700px;
+    padding: 5px;
+    background-color: #fff;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+    transition: transform 0.3s ease-in-out; /* Transition plus lente */
+  }
+
+  .product-card:hover {
+    transform: scale(1.03); /* Augmentation de la taille de la carte au survol */
+}
+
+  .product-card h2 {
+    font-size: 1.5rem;
+    margin: 5px 0; /* Réduction de la marge en haut et en bas */
+}
+
+.product-card p {
+    font-size: 1rem;
+    margin: 0; /* Réduction de la marge en haut et en bas */
+}
+  
+
+  .product-card .post-img {
+    max-width: 100%; /* L'image s'ajustera à la largeur de la carte */
+    max-height: 400px; /* Hauteur maximale pour l'image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain
+  
+  }
+  
+  .product-card .price {
+    margin-top: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .product-card .discount-price {
+    color: #e74c3c; /* Red color for discounted price */
+    text-decoration: line-through; /* Barre le texte du prix */
+    font-size: 1rem;
+  }
+  
+
+  /* Style du conteneur du formulaire */
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style du formulaire */
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style des champs de saisie */
+  .form-container form input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style des sélecteurs */
+  .form-container form select {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    color: #333;
+  }
+  
+  /* Style du bouton Envoyer */
+  .form-container form input[type="submit"] {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Style du bouton Envoyer au survol */
+  .form-container form input[type="submit"]:hover {
+    background: #0056b3;
+  }
+  
+  /*MEDIA QUERIES*/
+  
+  @media screen and (max-width: 600px) {
+    .product-card {
+      width: 100%;
+    }
+  }
